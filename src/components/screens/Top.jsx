@@ -2,6 +2,8 @@ import React ,{ useState }from 'react'
 import Styled from 'styled-components'
 import {BrowserRouter as Router,Link} from 'react-router-dom';
 import Page from '../Page';
+import {Helmet} from "react-helmet";
+
 
 function Top() {
     const [isClick,setClick] = useState(false);
@@ -11,6 +13,9 @@ function Top() {
     }
     return (
         <>
+            <Helmet>
+                <title>login</title>
+            </Helmet>
             <DivOne>
             <Div>
                 <Span ><Image src={require('../../assets/images/lock.png').default} alt="Image"/></Span>
