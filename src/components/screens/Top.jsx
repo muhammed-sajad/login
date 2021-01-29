@@ -43,7 +43,9 @@ function Top() {
             <Last>
                 <P>Copyright &copy; Your Website 2021.</P>
             </Last>
-            <Length />
+            <LengthAll>
+                <Length />
+            </LengthAll>
             <Page name='login'/> 
             </DivOne>
         </>
@@ -149,12 +151,14 @@ const P = Styled.p`
     text-align: center;
     font-size: 14px
 `
+const LengthAll = Styled.div`
+`;
 const Length = Styled.div`
     background: #d89d32;
     width: 30%;
     height: 5px;
     border-radius: 10px;
-    transition: 2s;
+    transition: 3s;
     &:hover {
         width: 100%;
     }

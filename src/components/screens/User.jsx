@@ -8,18 +8,13 @@ function User({match}) {
 
     useEffect(()=>{
         axios
-            .get(`https://reqres.in/api/users/${match.params.id}`)
+            .get(`https://reqres.in/api/users/${match.params.id}/`)
             .then(function (response) {
-                // handle success
                 setUser(response.data.data);
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
-            .then(function () {
-                // always executed
-            });
     })
     
     return (
